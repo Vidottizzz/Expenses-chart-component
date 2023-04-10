@@ -15,40 +15,34 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- CHART JS LOADER  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
     <title>Frontend Mentor | Expenses chart component</title>
-    <!-- CHART LOADER -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  
+
   </head>
   <body>
     <div id="card-itself">
       <header>
         <div id="my-balance" class="flex">
-          <div >
+          <div>
             <span>My balance</span>
             <p>$921.48</p>
           </div>
-          <img src="" alt="" />
+          <img src="images/logo.svg" alt="" />
         </div>
       </header>
       <div id="hold-mainfooter">
         <main>
           <p>Spending - Last 7 days</p>
-          <div id="columnchart_values" class="chart"></div>
+        
+            <canvas id="myChart"></canvas>
 
-          <!-- CHART -->
-          <!-- mon
- tue
- wed
- thu
- fri
- sat
- sun -->
-</main>
+        </main>
 
-<hr>
-<footer class="flex">
+        <hr />
+        <footer class="flex">
           <div>
             <span>Total this month</span>
             <p>$478.33</p>

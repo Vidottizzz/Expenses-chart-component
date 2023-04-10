@@ -29,10 +29,16 @@ body {
   background-color: brown;
 }
 footer {
-  margin-top: 19rem;
+  margin-top: 2rem;
 }
+img {
+    width: 4rem;
+    margin-left: 9rem;
+} 
+
 hr {
-  border: 1px solid black;
+    margin-top: 1.5rem;
+  border: 1px solid rgb(239, 236, 236);
 }
 .flex {
   display: flex;
@@ -68,8 +74,10 @@ hr {
   border-radius: 0.6rem;
 }
 
-#columnchart_values {
-  position: absolute;
-  left: 0.9rem;
+#myChart {
+
+width: 500px;
+height: 500px;
+margin-top: 4.5rem;
 }
 
