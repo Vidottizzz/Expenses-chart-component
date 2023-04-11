@@ -43,7 +43,6 @@ percentage();
 
 
 
-
 // dando fetch automaticamente ja colocando os dados dentro do chart
 fetch("data.json").then((response) => {
   response.json().then((dados) => {
@@ -75,7 +74,7 @@ fetch("data.json").then((response) => {
         labels: usuariosArr,
         datasets: [
           {
-            label: "% Spend",
+            label: "$",
             //podia ter colocado no data : usuariosAmount ( quer seria os dados do JSON)
             data: valores,
             backgroundColor:backgroundcolor,

@@ -26,7 +26,8 @@
 
 body {
   font-size: 18px;
-  background-color: brown;
+  background-color: hsl(0, 1%, 79%);
+
 }
 footer {
   margin-top: 2rem;
@@ -38,7 +39,7 @@ img {
 
 hr {
   margin-top: 1.5rem;
-  border: 1px solid rgb(239, 236, 236);
+  border: 1px solid rgb(228, 227, 227);
 }
 
 .flex {
@@ -49,14 +50,16 @@ hr {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 16px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: rgb(3, 115, 195);
 }
 #card-itself {
-  margin: 7rem auto;
+  box-shadow: 10px 5px 5px  rgba(165, 165, 165,0.5);
+  border-radius: 1rem;
+  margin: 7rem auto 3rem auto;
   padding: 4rem 1rem;
   width: 23.5rem;
   height: 45.3rem;
@@ -69,6 +72,7 @@ hr {
   border-radius: 0.6rem;
   height: 6.2rem;
   margin-bottom: 1rem;
+
   color: white;
 }
 #my-balance span {
@@ -142,3 +146,64 @@ hr {
   font-weight: 700;
 }
 
+/* //////// QUERY DESKTOP */
+
+@media screen and (min-width: 1440px) {
+
+  body {
+    background-color: var(--Cream);
+    margin-bottom: 0;
+  }
+  #card-itself {
+    margin: 7rem auto 0rem auto;
+    padding: 4rem 1rem;
+    width: 32rem;
+    height: 50.3rem;
+    background-color: var(--Cream);
+    position: relative;
+    box-shadow: 0px 0px 0px;
+  }
+  #myChart {
+    width: 10px;
+    height: 10px;
+    margin-top: 2rem;
+  }
+  #my-balance span, p {
+    margin-left: 0.5rem;
+  }
+
+  #hold-mainfooter {
+    background-color: white;
+    padding: 1rem;
+    height: 29rem;
+    border-radius: 0.6rem;
+  } 
+   #hold-mainfooter p {
+   font-size: 1.8rem;
+   margin-left: 1.6rem;
+  }
+  p#monthTotal{
+    margin-left: 0;
+  }
+  #hold-footer3 {
+    bottom: 12.3rem;
+    left: 12rem;
+    position: absolute;
+  }
+  #hold-footer3 p {
+   font-size: 1rem;
+   margin-left: 0rem;
+  }
+
+  #hold-footer2 {
+    margin-top: 0.5rem;
+  }
+  #hold-footer2 p{
+   font-size: 1rem;
+   margin-left: 6.5rem;
+  }
+  img {
+    width: 4rem;
+    margin-left: 17.4rem;
+  }
+}
